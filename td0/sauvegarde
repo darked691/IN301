@@ -1,0 +1,296 @@
+    1  cd Téléchargements/
+    2  ls
+    3  mount -t loop VBoxGuestAdditions_5.0.4.iso /mnt
+    4  sudo mount -t loop VBoxGuestAdditions_5.0.4.iso /mnt
+    5  sudo mount -t iso9660 VBoxGuestAdditions_5.0.4.iso /mnt
+    6  ls /mnt
+    7  sudo /mnt/VBoxLinuxAdditions.run 
+    8  exit
+    9  sudo rm -r /opt/VBoxGuestAdditions-4.3.20/
+   10  exit
+   11  w
+   12  whereis ls
+   13  whereis man
+   14  cd bur
+   15  cd bureau
+   16  pwd
+   17  cd ..
+   18  cd -
+   19  cd
+   20  pwd
+   21  cd/
+   22  cd /
+   23  pwd
+   24  cd /document
+   25  cd /Documents
+   26  cd /lm
+   27  cd ~/Documents
+   28  cd ..
+   29  pwd
+   30  cd /home/user/Bureau
+   31  cd -
+   32  less /home/user/Bureau
+   33  pwd
+   34  cd /
+   35  less /home/user/Bureau
+   36  cat /home/user/Bureau
+   37  cat /Bureau
+   38  cd /home/user/Bureau
+   39  /cat
+   40  /less
+   41  cat
+   42  ls
+   43  ls /home/user/Documents
+   44  cd /home/user/Documments
+   45  cd /home/user/Documents
+   46  /mkdir essai
+   47  mkdir essai
+   48  lis /Bureau
+   49  ls /Bureau
+   50  ls /home/user/Bureau
+   51  cd /home/user/Bureau
+   52  mkdir essai
+   53  cd /home/user/Documents/UVSQ_gaphics
+   54  /home/user/Bureau/Documents/UVSQ_graphics
+   55  pwd
+   56  cd  /home/user/Bureau/Documents/UVSQ_graphics
+   57  cd /home/user/Bureau/Documents
+   58  /home/user/Documents
+   59  cd  /home/user/Documents/UVSQ_graphics
+   60  geany fic1 &
+   61  cd  /home/user/Documents/UVSQ_graphics/sem3
+   62  cd /home/user/Documents/UVSQ_graphics
+   63  cd /home/user/Documents/UVSQ_graphics/sem 3
+   64  cd  /home/user/Documents/UVSQ_graphics/sem3
+   65  geay fic1 &
+   66  geany fic1 &
+   67  cd ~/Documents/UVSQ_graphics/sem3
+   68  gcc debug.c
+   69  cd ~/Documents/UVSQ_graphics/sem3
+   70  gcc debug.c
+   71  ls
+   72  a.out
+   73  ./debug.c
+   74  gcc debug.c -o debug
+   75  ./debug
+   76  ./a.out
+   77  ./debug
+   78  gcc debug.c
+   79  ls
+   80  ./a.out
+   81  /debug
+   82  ./debug
+   83  cd ~/Documents/sem3
+   84  cd ~/sem3
+   85  pwd
+   86  cd ~/Documents
+   87  cd ~/sem3
+   88  cd ~/UVSQ_graphics/sem3
+   89  cd ~/UVSQ_graphics
+   90  cd UVSQ_graphics
+   91  cd ~/sem3
+   92  cd sem3
+   93  cd user
+   94  cd ~/user
+   95  cd /home/user
+   96  mkdir essai
+   97  cd Bureau
+   98  mdir essai
+   99  mkdir essai
+  100  cd home/user/Documents/UVSQ_graphics
+  101  cd /home/user/Documents/UVSQ_graphics/sem3
+  102  geany fic1 &
+  103  copy fic1 fic2
+  104  cp fic1 fic2
+  105  gcc debug.c 
+  106  ./a.out
+  107  mv debug.c ~/sem3
+  108  mv debug.c ~/Bureau/UVSQ_graphics/sem3
+  109  cd Bureau
+  110  cd ~/Bureau
+  111  mv debug.c ~/Documeents/UVSQ_graphics/sem3
+  112  mv debug.c ~/Documents/UVSQ_graphics/sem3
+  113  cd ~/Bureau/Documents/UVSQ_graphics/sem3
+  114  cd  /home/user/Documents/UVSQ_graphics/sem3
+  115  gcc -o debuger debug.c
+  116  gcc debuger
+  117  ./debuger
+  118  gcc -o debuger -Wall debug.c -lm
+  119  gcc debug.c git clone https://github.com/darked691/IN301.git
+  120  geany fic1 &
+  121  cp fic1 fic2
+  122  mv fic2 fic3
+  123  rm fic1
+  124  cd -
+  125  cd ..
+  126  cd/home/user/Bureau
+  127  cd /home/user/Bureau
+  128  cd UVSQ_graphics/sem3
+  129  cd UVSQ_graphics
+  130  cd s
+  131  cd sem3
+  132  cd ~/sem3
+  133  cd sem3
+  134  pwd
+  135  cd /sem3
+  136  cd /home/user/Documents/UVSQ_graphics/sem3
+  137  l -l
+  138  git clone https://github.com/user/IN301
+  139  sudo apt-get install git
+  140  ping www.uvsq.fr
+  141  ping www.google.fr
+  142  sudo ping www.google.fr
+  143  ping www.google.fr
+  144  gbd ./debug.c
+  145  gbd ./debuger
+  146  gbd ./progDebug
+  147  gcc debug.c
+  148  ./a.out
+  149  gbd ./progDebug
+  150  gbd ./debug.c
+  151  gbd debug.c
+  152  gbd debug.c -o
+  153  dbg ./a.out
+  154  gcc debug.c
+  155  ./a.out
+  156  nmcli conn
+  157  ping www.uvsq.fr
+  158  ssh orion.dsi.uvsq.fr
+  159  ssh sysadmorion.dsi.uvsq.fr
+  160  ssh sysadm@orion.dsi.uvsq.fr
+  161  git
+  162  sudo apt-get install git
+  163  sudo apt-get --fix-missing update
+  164  sudo apt-get update
+  165  sudo apt-get install git
+  166  git clone https://github.com/darked691/IN301.git
+  167  cd IN301
+  168  mkdir td0
+  169  cd td0
+  170  touch essai
+  171  git add essai
+  172  git add fichier
+  173  git add essai
+  174  git commit -a
+  175  git commit essai
+  176  ajout fichier td0/essai
+  177  git commit essai
+  178  git commit -a
+  179  git config --global user.name "darked691"
+  180  git commit -a
+  181  git push
+  182  git commit -a
+  183  git config --global user.email "mehdi.78340@hotmail.fr"
+  184  git commit -a
+  185  git push
+  186  git commit -a
+  187  git push
+  188  git commit essai
+  189  git push
+  190  cd ../
+  191  ls
+  192  cd ../
+  193  ls
+  194  cd IN301/
+  195  git clone https://github.com/darked691/IN301.git
+  196  ls
+  197  cp td0 IN301/
+  198  ls
+  199  cd IN301/
+  200  ls
+  201  cd ../
+  202  ls
+  203  cp td0/essai IN301/TD0/.
+  204  ls
+  205  cd IN301/
+  206  mkdir td0
+  207  cd td0/
+  208  touch essai
+  209  ls
+  210  git add essai
+  211  git commit
+  212  git push
+  213  cd ../../
+  214  ls
+  215  cd IN301/
+  216  git commit
+  217  git add td0/essai 
+  218  git commit
+  219  git push
+  220  mv debug.c /B
+  221  mv debug.c /Bureau/Documents/sem3/td0
+  222  cd ~/Bureau
+  223  mv debug.c /Bureau/Documents/sem3/td0
+  224  git add debug.c
+  225  .git
+  226  cd /home/user/Documents/UVSQ_graphics/IN301/td0
+  227  cd /home/user/Documents/UVSQ_graphics/IN301
+  228  cd /home/user/Documents/UVSQ_graphics/sem3/IN301
+  229  cd td0
+  230  git add debug.c
+  231  git commit debug.c
+  232  git push
+  233  git add debug.c
+  234  cd /home/user/Documents/UVSQ_graphics/sem3/IN301/td0
+  235  git add debug.c
+  236  git commit debug.c
+  237  git push
+  238  ls
+  239  git status
+  240  git add debug.c 
+  241  git commit -a
+  242  cd ../
+  243  git push
+  244  git pull
+  245  git push
+  246  rm -rf IN301
+  247  rm IN301
+  248  rm -rf IN301
+  249  github
+  250  git clone https://github.com/moi/IN301/tree/master/td0
+  251  git clone https://github.com/moi/IN301/
+  252  git clone https://github.comdarked691/IN301/
+  253  gcc debug.c
+  254  cd td0
+  255  git clone https://github.comdarked691/IN301/
+  256  git pull
+  257  git clone https://github.comdarked691/IN301/
+  258  git clone https://github.com/darked691/IN301
+  259  git clone https://github.com/darked691/IN301/tdo
+  260  cd sem3
+  261  cd /home/user/Documents/UVSQ_graphics/sem3
+  262  git clone https://github.com/darked691/IN301/tdo
+  263  git clone https://github.com/darked691/IN301
+  264  git status
+  265  cd IN301
+  266  git status
+  267  git commit 
+  268  git add essai
+  269  git commit td0/essai
+  270  git push
+  271  gbs./a.out
+  272  gbd ./a.out
+  273  gbd ./debug.c
+  274  cd -
+  275  gbd ./a.out
+  276  gdb /a.out
+  277  gbd ./debug.c -g
+  278  gdb ./debug.c -g
+  279  gdb -g ./debug.c 
+  280  gdb ./debug.c -g
+  281  gdb ./debug.c 
+  282  gcc debug.c -g
+  283  cd IN301
+  284  cd td0
+  285  gcc debug.c -g
+  286  gdb
+  287  gcc debug.c -g
+  288  gdb /
+  289  gcc debug.c -g
+  290  gdb ./debug.c
+  291  gdb ./a.out
+  292  gcc ./debug.c
+  293  ./a.out
+  294  gcc debug.c
+  295  ./a.out
+  296  history > sauvegarde
