@@ -1,5 +1,5 @@
 /*
- * sysaruse.c
+ * corrcoupami.c
  * 
  * Copyright 2016 Utilisateur <user@lubuntu>
  * 
@@ -25,34 +25,17 @@
 #include <stdio.h>
 
 int main(int argc, char **argv)
-{int n,i,y;
-	i=0;
-	y=0;
-	scanf("%d",&n);
-	while(n!=1)
-	{if(n%2==0)
-		{n=n/2;
-			i++;
-			printf("    i%d",i);
-			if(n<10 )
-	        {y++;
-				printf(" ");
-            printf("%d",y);}
-			printf("\n");
-			printf("%d",n);}
-	else
-	{n=3*n+1;
-		i++;
-		printf("    i%d",i);
-		if(n<10)
-	    {y++;
-			printf(" ");
-        printf("%d",y);}
-		printf("\n");
-		printf("%d",n);}}
+{int i;
+	int n=100 000;
+	int sommedei;
+	for(i=1;i<n;i++)
+	{sommedei=somme_div(i);
+	if(i<=soedei && sommedei<n)
+	{if(i==somme_div(sommedei);
+		printf("%d et %d sont amis\n,i,Sommedei);
+	}
+}
 
-			
-	
 	return 0;
 }
 

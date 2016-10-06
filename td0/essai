@@ -1,1 +1,3 @@
 salut
+option compilation gcc ami.c -oami -O2 
+-Wall

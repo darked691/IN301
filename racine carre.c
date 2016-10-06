@@ -1,5 +1,5 @@
 /*
- * sysaruse.c
+ * racine carre.c
  * 
  * Copyright 2016 Utilisateur <user@lubuntu>
  * 
@@ -25,33 +25,22 @@
 #include <stdio.h>
 
 int main(int argc, char **argv)
-{int n,i,y;
-	i=0;
-	y=0;
-	scanf("%d",&n);
-	while(n!=1)
-	{if(n%2==0)
-		{n=n/2;
-			i++;
-			printf("    i%d",i);
-			if(n<10 )
-	        {y++;
-				printf(" ");
-            printf("%d",y);}
-			printf("\n");
-			printf("%d",n);}
-	else
-	{n=3*n+1;
-		i++;
-		printf("    i%d",i);
-		if(n<10)
-	    {y++;
-			printf(" ");
-        printf("%d",y);}
-		printf("\n");
-		printf("%d",n);}}
-
-			
+{float precision;
+	float inf=0;
+	float n;
+	scanf("%f",&n);
+	printf("\n precision");
+	scanf("%f",&precision);
+	float sup=n;
+	float mid=(inf+sup)/2;
+	while((mid*mid<=n-precision)) || (mid*mid>=n+precision))
+	{if(mid*mid>=n)
+		{sup=mid;}
+		else
+		{inf=mid;
+			mid=(inf+sup)/2;
+		}
+		return mid;
 	
 	return 0;
 }

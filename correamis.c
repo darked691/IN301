@@ -1,5 +1,5 @@
 /*
- * sysaruse.c
+ * correamis.c
  * 
  * Copyright 2016 Utilisateur <user@lubuntu>
  * 
@@ -23,35 +23,16 @@
 
 
 #include <stdio.h>
-
+int somme_div(int a)
+{int s=0;
+	for(int i=1;i<a/2;i++)
+	{if(!(a%i))
+		{s+=i;}
+			return s;
+			int estamis(int a,int b);
+			{return(Sommediv(a)==b && sommediv(b)==a);}
 int main(int argc, char **argv)
-{int n,i,y;
-	i=0;
-	y=0;
-	scanf("%d",&n);
-	while(n!=1)
-	{if(n%2==0)
-		{n=n/2;
-			i++;
-			printf("    i%d",i);
-			if(n<10 )
-	        {y++;
-				printf(" ");
-            printf("%d",y);}
-			printf("\n");
-			printf("%d",n);}
-	else
-	{n=3*n+1;
-		i++;
-		printf("    i%d",i);
-		if(n<10)
-	    {y++;
-			printf(" ");
-        printf("%d",y);}
-		printf("\n");
-		printf("%d",n);}}
-
-			
+{
 	
 	return 0;
 }

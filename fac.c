@@ -1,5 +1,5 @@
 /*
- * sysaruse.c
+ * fac.c
  * 
  * Copyright 2016 Utilisateur <user@lubuntu>
  * 
@@ -23,35 +23,18 @@
 
 
 #include <stdio.h>
-
-int main(int argc, char **argv)
-{int n,i,y;
-	i=0;
-	y=0;
-	scanf("%d",&n);
-	while(n!=1)
-	{if(n%2==0)
-		{n=n/2;
-			i++;
-			printf("    i%d",i);
-			if(n<10 )
-	        {y++;
-				printf(" ");
-            printf("%d",y);}
-			printf("\n");
-			printf("%d",n);}
+int factorielle(int n)
+{int f;
+	if(n<=1)
+	{f=1;}
 	else
-	{n=3*n+1;
-		i++;
-		printf("    i%d",i);
-		if(n<10)
-	    {y++;
-			printf(" ");
-        printf("%d",y);}
-		printf("\n");
-		printf("%d",n);}}
-
-			
+	{f=n*factorielle(--n);}
+	return f;}
+int main(int argc, char **argv)
+{int n;
+	n=3;
+	n=factorielle(n);
+	printf("%d",n);
 	
 	return 0;
 }

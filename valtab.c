@@ -1,5 +1,5 @@
 /*
- * sysaruse.c
+ * valtab.c
  * 
  * Copyright 2016 Utilisateur <user@lubuntu>
  * 
@@ -23,35 +23,24 @@
 
 
 #include <stdio.h>
-
 int main(int argc, char **argv)
-{int n,i,y;
-	i=0;
-	y=0;
+{int n,m,i,p,r;
 	scanf("%d",&n);
-	while(n!=1)
-	{if(n%2==0)
-		{n=n/2;
-			i++;
-			printf("    i%d",i);
-			if(n<10 )
-	        {y++;
-				printf(" ");
-            printf("%d",y);}
-			printf("\n");
-			printf("%d",n);}
-	else
-	{n=3*n+1;
-		i++;
-		printf("    i%d",i);
-		if(n<10)
-	    {y++;
-			printf(" ");
-        printf("%d",y);}
-		printf("\n");
-		printf("%d",n);}}
-
-			
+	scanf("%d",&m);
+	p=0;r=0;
+	int t[n],t1[m];
+	for(i=0;i<n;i++)
+	{if(i>0 && i<n)
+	{t[i]=5;
+		p++;}
+		for(i=n;i<n+m;i++)
+	if(i>n-1 && i<m)
+	{t1[i]=5;
+		r++;}
+	}
+  
+    printf("%d\n",p);
+	printf("%d",r);
 	
 	return 0;
 }
