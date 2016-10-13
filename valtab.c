@@ -20,27 +20,33 @@
  * 
  * 
  */
-
-
-#include <stdio.h>
-int main(int argc, char **argv)
-{int n,m,i,p,r;
-	scanf("%d",&n);
-	scanf("%d",&m);
-	p=0;r=0;
-	int t[n],t1[m];
-	for(i=0;i<n;i++)
-	{if(i>0 && i<n)
-	{t[i]=5;
-		p++;}
-		for(i=n;i<n+m;i++)
-	if(i>n-1 && i<m)
-	{t1[i]=5;
-		r++;}
-	}
-  
-    printf("%d\n",p);
-	printf("%d",r);
+ 
+ #include <stdio.h>
+ #include <stdlib.h>
+struct amis
+{int t[1][1];
+int* n;
+};
+void modif(struct amis S,int T[1][1])
+{
+	  printf("%d %d %d %d\n",sizeof(S),sizeof(T),sizeof(S.t),sizeof(S.n));
+	T[0][0]=1;
+	S.t[0][0]=1;
+	S.n[0]=1;
+}
+int main()
+{struct amis S;
+	
+	int T[1][1]={{0}};
+	S.n[0]=1;
+	S.t[0][0]=0;
+	S.n=malloc(sizeof(int));
+	S.n[0]=0;
+	
+	 //~ printf("%d %d %d\n",T[0][0],S.t[0][0],S.p[0]);
+	modif(S,T);
+	//~ printf("%d %d %d\n",T[0][0],S.t[0][0],S.p[0]);
+	free(S.n);
 	
 	return 0;
 }

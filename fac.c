@@ -28,8 +28,8 @@ int factorielle(int n)
 	if(n<=1)
 	{f=1;}
 	else
-	{f=n*factorielle(--n);}
-	return f;}
+	{ }
+	return=n*factorielle(--n);;}
 int main(int argc, char **argv)
 {int n;
 	n=3;
