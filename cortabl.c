@@ -45,4 +45,12 @@ int main(int argc, char **argv)
 	
 	return 0;
 }
+//~ e->suiv=insere_fin(e->suiv,n);
+//~ int est_trie (liste l)
+//~ {
+	//~ if(l->suiv==NULL)return 1;
+	//~ else if((l->suiv)->val<=(l->val)) return 0;
+	//~ return est_trie(l->suiv);
 
+if(l==null)
+l1=malloc

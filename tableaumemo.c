@@ -96,11 +96,81 @@ tableau decal(tableau t)
 	s=0;
 	i=0;
 	 while(i<t.p)
-	{ i++;
+	{ 
 		s=minimum(t);
-		t.t[i]=s;}
+		t.t[i]=s;
+		i++;
+	}
 		return t;
 	}
+tableau dec(tableau t)
+{
+	int i;
+	int m=t.t[0];
+	if(t.p+1>100) return t;
+	for(i=t.p;i>=0;i--)
+		t.t[i+1]=t.t[i];
+		t.t[0]=0;
+		t.p++;
+		printf("\n");
+ for(i=0;i<10;i++)
+ {printf(" %d ",t.t[i]);}
+ return t;
+}
+tableau alea1(tableau t){
+	int i,j;
+	j = alea_int(t.p);
+	for (i=j; i < t.p; i++){
+		t.t[i] = t.t[i + 1];
+	}
+	t.p --;
+	t.t[t.p]=0;
+			printf("\n");
+ for(i=0;i<10;i++)
+ {printf(" %d ",t.t[i]);}
+	return t;
+}
+tableau doublons(tableau t){
+	int TC,i,temp,p;
+	for(TC = 0; TC < t.p; TC++){
+		for(p = TC + 1; p < t.p; p++)
+			if (t.t[p] == t.t[TC]){
+				for (i=p; i < t.p; i++)
+					t.t[i] = t.t[i + 1];	
+				t.p--; p--;}
+	}
+		printf("\n");
+ for(i=0;i<10;i++)
+ {printf(" %d ",t.t[i]);}
+
+	return t;	
+	
+}
+	
+tableau insertri(tableau t, int e){
+	int TC,i,k;
+	TC=t.t[t.p-1];
+	if(t.p == 0){
+		t.p = 1;
+		t.t[0] = e;}
+		
+	else {
+		i = 0;
+		while(i < t.p && t.t[i] < e) i++;
+		if(i == t.p && t.t[i] < e) k = t.p + 1;
+		else k = i;
+		
+		for(i =t.p; i >= k; i--)
+			t.t[i] = t.t[i-1];
+		t.t[k] = e;
+		t.p++;		
+	}
+	
+	printf("\n");
+ for(i=0;i<10;i++)
+ {printf(" %d ",t.t[i]);}
+	return t;
+}
 int main(int argc, char **argv)
 {int prod,min,i;
 	prod=1;
@@ -115,10 +185,9 @@ t=init_tab();
  //~ printf("%d\n",min);
  for(i=0;i<10;i++)
  {printf(" %d ",t.t[i]);}
- t=tri(t);
- printf("\n");
- for(i=0;i<10;i++)
- {printf(" %d ",t.t[i]);}
+  t=doublons(t);
+ 
+ 
 	//~ printf("%d\n",alea_int(60));
 	//~ printf("%d\n",alea_int(60));
 	//~ printf("%d\n",alea_int(60));
